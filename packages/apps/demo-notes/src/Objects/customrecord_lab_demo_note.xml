@@ -1,0 +1,33 @@
+<customrecordtype scriptid="customrecord_lab_demo_note">
+  <accesstype>CUSTRECORDENTRYPERM</accesstype>
+  <allowattachments>F</allowattachments>
+  <allowinlineediting>T</allowinlineediting>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>T</allowquicksearch>
+  <allowuiaccess>T</allowuiaccess>
+  <description>Lab demo record for practicing the SDF package lifecycle. Safe to delete.</description>
+  <includename>T</includename>
+  <isinactive>F</isinactive>
+  <recordname>Lab Demo Note</recordname>
+  <showid>F</showid>
+  <shownotes>T</shownotes>
+  <customrecordcustomfields>
+    <customrecordcustomfield scriptid="custrecord_lab_demo_note_body">
+      <description>Body of the demo note</description>
+      <fieldtype>TEXTAREA</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Note Body</label>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_lab_demo_note_priority">
+      <description>Priority, from the shared list in the account package</description>
+      <fieldtype>SELECT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Priority</label>
+      <selectrecordtype>[scriptid=customlist_lab_demo_priority]</selectrecordtype>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+  </customrecordcustomfields>
+</customrecordtype>

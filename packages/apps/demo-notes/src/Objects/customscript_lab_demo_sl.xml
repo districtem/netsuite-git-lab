@@ -1,0 +1,17 @@
+<suitelet scriptid="customscript_lab_demo_sl">
+  <description>Demo Suitelet: lists Lab Demo Notes. Deployed in TESTING status.</description>
+  <isinactive>F</isinactive>
+  <name>Lab Demo Notes List</name>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/lab-demo-notes/lab_demo_sl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_lab_demo_sl">
+      <allroles>T</allroles>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <status>TESTING</status>
+      <title>Lab Demo Notes List</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>
