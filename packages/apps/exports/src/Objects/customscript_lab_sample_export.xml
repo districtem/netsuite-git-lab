@@ -1,0 +1,12 @@
+<scheduledscript scriptid="customscript_lab_sample_export">
+  <description>Placeholder file for the Git practice lab.</description>
+  <isinactive>F</isinactive>
+  <name>lab_sample_export.js</name>
+  <scriptfile>[/SuiteScripts/lab_sample_export.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_lab_sample_export">
+      <isdeployed>T</isdeployed>
+      <status>TESTING</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

@@ -1,0 +1,9 @@
+<deploy>
+  <files>
+    <path>~/FileCabinet/SuiteScripts/lab-exports/*</path>
+    <path>~/FileCabinet/SuiteScripts/lab_sample_export.js</path>
+  </files>
+  <objects>
+    <path>~/Objects/*</path>
+  </objects>
+</deploy>
