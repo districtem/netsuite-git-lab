@@ -1,0 +1,12 @@
+<suitelet scriptid="customscript_lab_sl_shift_week">
+  <description>Placeholder file for the Git practice lab.</description>
+  <isinactive>F</isinactive>
+  <name>Lab Shift Week Editor</name>
+  <scriptfile>[/SuiteScripts/lab-shift-schedule/lab_sl_shift_week.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_lab_sl_shift_week">
+      <isdeployed>T</isdeployed>
+      <status>TESTING</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

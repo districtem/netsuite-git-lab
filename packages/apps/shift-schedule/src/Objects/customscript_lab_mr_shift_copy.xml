@@ -1,0 +1,12 @@
+<mapreducescript scriptid="customscript_lab_mr_shift_copy">
+  <description>Placeholder file for the Git practice lab.</description>
+  <isinactive>F</isinactive>
+  <name>Lab Shift Week Copy Forward</name>
+  <scriptfile>[/SuiteScripts/lab-shift-schedule/lab_mr_shift_copy.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_lab_mr_shift_copy">
+      <isdeployed>T</isdeployed>
+      <status>TESTING</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

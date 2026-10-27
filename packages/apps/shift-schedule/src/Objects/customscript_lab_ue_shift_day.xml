@@ -1,0 +1,12 @@
+<usereventscript scriptid="customscript_lab_ue_shift_day">
+  <description>Placeholder file for the Git practice lab.</description>
+  <isinactive>F</isinactive>
+  <name>Lab Shift Day UE</name>
+  <scriptfile>[/SuiteScripts/lab-shift-schedule/lab_ue_shift_day.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_lab_ue_shift_day">
+      <isdeployed>T</isdeployed>
+      <status>TESTING</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

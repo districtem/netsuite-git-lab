@@ -1,0 +1,10 @@
+<customlist scriptid="customlist_lab_shday_reason">
+  <description>Placeholder file for the Git practice lab.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Shift Day Override Reason</name>
+  <customvalues>
+    <customvalue scriptid="val_lab_shday_holiday"><value>Holiday</value><isinactive>F</isinactive></customvalue>
+    <customvalue scriptid="val_lab_shday_other"><value>Other</value><isinactive>F</isinactive></customvalue>
+  </customvalues>
+</customlist>

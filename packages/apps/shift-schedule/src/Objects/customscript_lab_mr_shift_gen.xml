@@ -1,0 +1,12 @@
+<mapreducescript scriptid="customscript_lab_mr_shift_gen">
+  <description>Placeholder file for the Git practice lab.</description>
+  <isinactive>F</isinactive>
+  <name>Lab Shift Day Generator</name>
+  <scriptfile>[/SuiteScripts/lab-shift-schedule/lab_mr_shift_gen.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_lab_mr_shift_gen">
+      <isdeployed>T</isdeployed>
+      <status>TESTING</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

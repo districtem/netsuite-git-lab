@@ -1,0 +1,5 @@
+<customrecordtype scriptid="customrecord_lab_shift">
+  <description>Placeholder file for the Git practice lab.</description>
+  <isinactive>F</isinactive>
+  <recordname>Lab Shift</recordname>
+</customrecordtype>
