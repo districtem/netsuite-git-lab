@@ -11,8 +11,8 @@ GitHub account that hosts this repo. Every command works in PowerShell and in Gi
 
 ```bash
 git --version          # 2.23 or newer (for git switch)
-git config --global user.name  "Your Name"
-git config --global user.email "you@example.com"
+git config --global user.name  "<Your Name>"
+git config --global user.email "<you@example.com>"
 gh auth login          # sign in to GitHub from the terminal
 ```
 
@@ -26,7 +26,7 @@ Anyone can clone and read it, since it's public.
 
 ```bash
 cd ~/Projects
-gh repo clone OWNER/netsuite-git-lab     # uses HTTPS or SSH, whichever you picked in gh
+gh repo clone districtem/netsuite-git-lab     # uses HTTPS or SSH, whichever you picked in gh
 cd netsuite-git-lab
 git status
 git log --oneline
@@ -41,7 +41,7 @@ Notice: a local `main` *and* a remote-tracking `origin/main`. Same commit, for n
 ## Round 2: Try to push straight to main (it should fail)
 
 ```bash
-echo "YOURNAME was here" >> README.md
+echo "<Your Name> was here" >> README.md
 git commit -am "Sneaky edit to main"
 git push                          # rejected: main is protected
 git reset --hard origin/main      # throw the local commit away (it was never shared)
@@ -56,13 +56,13 @@ git switch -c feature/YOURNAME-list
 cp packages/account/src/Objects/customlist_lab_demo_priority.xml packages/apps/demo-notes/src/Objects/customlist_lab_demo_YOURNAME.xml
 ```
 
-Edit the new file: change `scriptid` to `customlist_lab_demo_YOURNAME` and `<name>` to
-something like `YOURNAME's Snack Ranking`. Then:
+Edit the new file: change `scriptid` to `customlist_lab_demo_<Your Name>` and `<name>` to
+something like `<Your Name>'s Snack Ranking`. Then:
 
 ```bash
 git status
 git add packages/apps/demo-notes/src/Objects/customlist_lab_demo_YOURNAME.xml
-git commit -m "demo-notes: add YOURNAME's list"
+git commit -m "demo-notes: add <Your Name>'s list"
 git push -u origin feature/YOURNAME-list
 ```
 
@@ -93,10 +93,10 @@ Lesson: `git status` never asks GitHub. `fetch` updates what Git knows; `pull` b
 ```bash
 git switch main
 git pull
-git switch -c feature/YOURNAME-title
+git switch -c feature/<Your Name>-title
 # edit packages/apps/demo-notes/src/FileCabinet/SuiteScripts/lab-demo-notes/lab_demo_sl.js
 # change the TITLE line to: const TITLE = 'Lab Demo Notes: YOURNAME edition';
-git commit -am "demo-notes: YOURNAME's Suitelet title"
+git commit -am "demo-notes: <Your Name>'s Suitelet title"
 git push -u origin feature/YOURNAME-title
 ```
 
@@ -125,7 +125,7 @@ Your PR now shows no conflicts.
 ```bash
 git switch main
 git pull
-git branch -d feature/YOURNAME-list feature/YOURNAME-title
+git branch -d feature/<Your Name>-list feature/YOURNAME-title
 ```
 
 ## Escape hatches
