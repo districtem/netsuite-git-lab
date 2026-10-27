@@ -52,7 +52,7 @@ git reset --hard origin/main      # throw the local commit away (it was never sh
 ## Round 3: The real workflow: branch → commit → push → PR
 
 ```bash
-git switch -c feature/YOURNAME-list
+git switch -c feat/YOURNAME-list
 cp packages/account/src/Objects/customlist_lab_demo_priority.xml packages/apps/demo-notes/src/Objects/customlist_lab_demo_YOURNAME.xml
 ```
 
@@ -63,7 +63,7 @@ something like `<Your Name>'s Snack Ranking`. Then:
 git status
 git add packages/apps/demo-notes/src/Objects/customlist_lab_demo_YOURNAME.xml
 git commit -m "demo-notes: add <Your Name>'s list"
-git push -u origin feature/YOURNAME-list
+git push -u origin feat/YOURNAME-list
 ```
 
 Open a pull request on GitHub. Ask your neighbour to review and approve it.
@@ -93,11 +93,11 @@ Lesson: `git status` never asks GitHub. `fetch` updates what Git knows; `pull` b
 ```bash
 git switch main
 git pull
-git switch -c feature/<Your Name>-title
+git switch -c feat/<Your Name>-title
 # edit packages/apps/demo-notes/src/FileCabinet/SuiteScripts/lab-demo-notes/lab_demo_sl.js
 # change the TITLE line to: const TITLE = 'Lab Demo Notes: YOURNAME edition';
 git commit -am "demo-notes: <Your Name>'s Suitelet title"
-git push -u origin feature/YOURNAME-title
+git push -u origin feat/YOURNAME-title
 ```
 
 Open a PR. The facilitator merges ONE. Then everyone else:
@@ -125,7 +125,7 @@ Your PR now shows no conflicts.
 ```bash
 git switch main
 git pull
-git branch -d feature/<Your Name>-list feature/YOURNAME-title
+git branch -d feat/<Your Name>-list feat/YOURNAME-title
 ```
 
 ## Escape hatches
@@ -137,7 +137,7 @@ git branch -d feature/<Your Name>-list feature/YOURNAME-title
 | Staged something by mistake | `git restore --staged <file>` |
 | Mid-merge and want out | `git merge --abort` |
 | "Your local changes would be overwritten" | `git stash`, switch/pull, then `git stash pop` |
-| Committed on main by mistake (not pushed) | `git branch feature/x` then `git reset --hard origin/main` |
+| Committed on main by mistake (not pushed) | `git branch feat/x` then `git reset --hard origin/main` |
 | `git branch -d` refuses | its PR isn't merged yet (or you haven't pulled main) |
 | Windows PowerShell rejects `&&` | run the commands on separate lines |
 
