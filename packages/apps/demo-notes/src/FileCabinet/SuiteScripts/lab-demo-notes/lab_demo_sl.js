@@ -7,7 +7,7 @@
  * @NScriptType Suitelet
  */
 define(['N/search', 'N/ui/serverWidget'], (search, ui) => {
-  const TITLE = 'Lab Demo Notes (v2)';
+  const TITLE = 'Lab Demo Notes (v2) Emily\'s Edit';
 
   const onRequest = (ctx) => {
     const form = ui.createForm({ title: TITLE });
