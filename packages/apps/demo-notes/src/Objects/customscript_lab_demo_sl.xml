@@ -1,7 +1,7 @@
 <suitelet scriptid="customscript_lab_demo_sl">
   <description>Demo Suitelet: lists Lab Demo Notes. Deployed in TESTING status.</description>
   <isinactive>F</isinactive>
-  <name>Lab Demo Notes List</name>
+  <name>Lab Demo Notes List - Emily Test</name>
   <notifyowner>T</notifyowner>
   <scriptfile>[/SuiteScripts/lab-demo-notes/lab_demo_sl.js]</scriptfile>
   <scriptdeployments>
